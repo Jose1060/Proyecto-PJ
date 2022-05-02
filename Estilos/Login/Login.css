@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-image: url("https://www.peru.travel/Contenido/Destino/Imagen/es/3/1.2/Principal/Plaza%20de%20Armas%20Arequipa.jpg");
+	z-index: 0;
+	height: 100vh;
+}
+
+.contenedor-izq {
+	flex: 1;
+}
+.contenedor-der {
+	flex: 1;
+	display: flex;
+}
+
+.logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30%;
+}
+
+.vectores-fondo {
+	position: absolute;
+	right: 0;
+	height: 100vh;
+	z-index: -1;
+}
+
+.formulario-container {
+	height: auto;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-left: 25%;
+
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.33);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(17px);
+	-webkit-backdrop-filter: blur(17px);
+
+	box-shadow: 0px 32px 87px rgba(0, 0, 0, 0.42);
+	border-radius: 110px;
+	padding: 40px;
+}
+
+.formulario-enlaces {
+	height: auto;
+
+	padding-left: 45px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 8px;
+
+	background: rgba(255, 0, 0, 0.22);
+	border-radius: 70px;
+}
+
+li {
+	list-style: none;
+	padding-bottom: 5px;
+}
+
+.formulario-datos {
+	background: rgba(255, 255, 255, 0.71);
+	border-radius: 70px;
+}
+
+.formulario-datos-input {
+	border-radius: 70px;
+}
+
+.formulario-enlaces-iconos {
+	font-size: 20px;
+	padding-right: 8px;
+}
+
+.formulario-enlaces-label {
+	color: white;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	padding: 4px;
+	padding-left: 12px;
+	padding-right: 10px;
+}
+
+.formulario-enlaces-label:hover {
+	color: #ff0000;
+	font-size: 16px;
+	transition: all 1s;
+	background-color: white;
+	border-radius: 70px;
+	margin-left: 20px;
+	text-decoration: none;
+}
+
+.formulario-enlaces-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.formulario-datos-boton {
+	background: #f35151;
+	border-radius: 70px;
+	font-size: 18px;
+	width: auto;
+	color: white;
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	transition: all 1s;
+	border: none;
+}
+.formulario-datos-boton:hover {
+	background: #941414;
+}
