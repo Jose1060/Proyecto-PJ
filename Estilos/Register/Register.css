@@ -75,3 +75,7 @@
 
 	border-radius: 70px;
 }
+
+.boton-contenedor {
+	display: flex;
+}
