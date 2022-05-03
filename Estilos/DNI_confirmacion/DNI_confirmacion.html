@@ -48,8 +48,12 @@
 					<div class="contenedor-der col-md-7">
 						<div class="contenedor-pj-form col row p-0">
 							<div class="formulario-datos col mb-4 ">
-								<h5 class="mb-4 text-lg-center">Ingrese sus datos de acceso</h5>
+								<h5 class="mb-4 text-lg-center">Paso 1</h5>
 								<form action="">
+                                    <div class="label-container">
+                                        <label class="label-text">DNI</label>
+                                        <label class="label-text">Codigo de verificacion</label>
+                                    </div>
 									<div class="form-row">
 										<div class="form-group col-md-10">
 											<input
@@ -61,25 +65,28 @@
 										</div>
 
 										<div class="form-group col-md-2">
+                                            
 											<input
 												type="text"
 												class="form-control formulario-datos-input text-center"
 												id="Verificacion"
-												placeholder="Codigo de Verificacion"
+												placeholder="1"
 											/>
 										</div>
 									</div>
                                     
+                                    
                                     <div class="form-group col-8 pl-0 ">
-                                        <label for="">
+                                        <label class="label-text">
                                             Fecha de Nacimiento
                                         </label>
                                         <input
                                         class="form-control formulario-datos-input"
                                         data-date-format="dd/mm/yyyy"
-                                        id="datepicker"
-                                    /> 
+                                        id="datepicker"/>
 									</div>
+
+                                    
 
 									<div class="boton-contenedor justify-content-end">
 										<button
