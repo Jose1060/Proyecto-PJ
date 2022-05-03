@@ -40,9 +40,9 @@
 						</div>
 					</div>
 					<div class="contenedor-der col-auto">
-						<div class="contenedor-pj-form col row p-0 justify-content-center">
+						<div class="contenedor-pj-form col row pt-3 justify-content-center">
 							<div class="formulario-datos col-lg-12 mb-4">
-								<h5 class="mb-4 text-lg-center">Ingrese sus datos de acceso</h5>
+								<h3 class="mb-5 text-lg-center">Ingrese sus datos</h3>
 								<form action="">
 									<div class="form-row">
 										<div class="form-group col-md-2">
@@ -80,45 +80,6 @@
 									</div>
 
 									<div class="form-row">
-										<div class="form-group col-md-2">
-											<label class="form-label" for="Departamento"
-												>Departamento</label
-											>
-											<select
-												id="Departamento"
-												class="form-control formulario-datos-input"
-											>
-												<option selected>Choose...</option>
-												<option>...</option>
-											</select>
-										</div>
-
-										<div class="form-group col-md-5">
-											<label class="form-label" for="Provincia"
-												>Provincia</label
-											>
-											<select
-												id="Provincia"
-												class="form-control formulario-datos-input"
-											>
-												<option selected>Choose...</option>
-												<option>...</option>
-											</select>
-										</div>
-
-										<div class="form-group col-md-5">
-											<label class="form-label" for="Distrito">Distrito</label>
-											<select
-												id="Distrito"
-												class="form-control formulario-datos-input"
-											>
-												<option selected>Choose...</option>
-												<option>...</option>
-											</select>
-										</div>
-									</div>
-
-									<div class="form-row">
 										<div class="form-group col-md-8">
 											<label class="form-label">Direccion</label>
 											<input
@@ -140,7 +101,46 @@
 										</div>
 									</div>
 
-									<div class="form-group col-8 pl-0">
+									<div class="form-row">
+										<div class="form-group col-md-4">
+											<label class="form-label" for="Departamento"
+												>Departamento</label
+											>
+											<select
+												id="Departamento"
+												class="form-control formulario-datos-input"
+											>
+												<option selected>Choose...</option>
+												<option>...</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label class="form-label" for="Provincia"
+												>Provincia</label
+											>
+											<select
+												id="Provincia"
+												class="form-control formulario-datos-input"
+											>
+												<option selected>Choose...</option>
+												<option>...</option>
+											</select>
+										</div>
+
+										<div class="form-group col-md-4">
+											<label class="form-label" for="Distrito">Distrito</label>
+											<select
+												id="Distrito"
+												class="form-control formulario-datos-input"
+											>
+												<option selected>Choose...</option>
+												<option>...</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group col-7 pl-0">
 										<label class="form-label">Correo</label>
 										<input
 											type="text"
@@ -150,7 +150,7 @@
 										/>
 									</div>
 
-									<div class="form-group col-8 pl-0">
+									<div class="form-group col-7 pl-0">
 										<label class="form-label">Correo Nuevamente</label>
 										<input
 											type="text"
@@ -159,7 +159,7 @@
 											placeholder="Correo Electronio Nuevamente"
 										/>
 									</div>
-									<div class="form-group">
+									<div class="form-group col-7 pl-0">
 										<label class="form-label">Contraseña</label>
 										<input
 											type="password"
@@ -168,7 +168,7 @@
 											placeholder="Contraseña"
 										/>
 									</div>
-									<div class="form-group">
+									<div class="form-group col-7 pl-0">
 										<label class="form-label">Repetir contraseña</label>
 										<input
 											type="password"
@@ -177,14 +177,19 @@
 											placeholder="Contrasena Nuevamente"
 										/>
 									</div>
-									<div class="boton-contenedor justify-content-end">
+									<div class="boton-contenedor pt-5 justify-content-end">
 										<button
 											type="submit"
 											class="btn btn-primary formulario-datos-boton"
 										>
-											<span class="material-symbols-outlined align-middle">
-												arrow_forward_ios
-											</span>
+											Cancelar
+										</button>
+
+										<button
+											type="submit"
+											class="btn btn-primary formulario-datos-boton ml-3"
+										>
+											Crear Usuario
 										</button>
 									</div>
 								</form>

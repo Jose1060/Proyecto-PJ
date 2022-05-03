@@ -14,8 +14,6 @@
 	background-size: cover;
 	min-height: 100vh;
 	height: auto;
-
-	padding-bottom: 57px;
 }
 
 .contenedor-izq {
@@ -86,10 +84,19 @@
 }
 
 .boton-contenedor {
+	margin-top: 15px;
 	display: flex;
 }
 
 .form-label {
+	background-color: #5c0303;
+	border-radius: 70px;
 	padding-left: 10px;
-	color: white;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #fff;
+}
+
+.contenedor-pj-form {
 }
