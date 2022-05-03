@@ -98,5 +98,18 @@
 	color: #fff;
 }
 
-.contenedor-pj-form {
+.group-inputs {
+	border-bottom: 3px groove #000000;
+	border-left: 3px groove #000000;
+	padding: 12px;
+	margin-bottom: 35px;
+	border-radius: 50px;
+	background: rgb(92, 3, 3);
+	background: linear-gradient(
+		45deg,
+		rgba(92, 3, 3, 0.6936975473783263) 0%,
+		rgba(164, 92, 88, 0.7861345221682423) 2%,
+		rgba(240, 205, 186, 0.19509810760241597) 9%,
+		rgba(255, 76, 76, 0) 12%
+	);
 }
