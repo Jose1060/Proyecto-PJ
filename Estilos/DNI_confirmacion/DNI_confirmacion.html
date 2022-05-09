@@ -52,71 +52,71 @@
 							<div class="formulario-datos col mb-4">
 								<h5 class="mb-4 text-lg-center">Paso 1</h5>
 								<form action="">
-									<div class="label-container">
-										<label class="label-text">DNI</label>
-										<label class="label-text">Codigo de verificacion</label>
-									</div>
-									<div class="form-row">
-										<div class="form-group col-md-10">
+									<div class="formulario-contenedor-inputs">
+										<div class="label-container">
+											<label class="label-text">DNI</label>
+											<label class="label-text">Codigo de verificacion</label>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-10">
+												<input
+													type="text"
+													class="form-control formulario-datos-input"
+													id="DNI"
+													placeholder="DNI"
+												/>
+											</div>
+
+											<div class="form-group col-md-2">
+												<input
+													type="text"
+													class="form-control formulario-datos-input text-center"
+													id="Verificacion"
+													placeholder="1"
+												/>
+											</div>
+										</div>
+
+										<div class="form-group col-8 pl-0">
+											<label class="label-text"> Fecha de Nacimiento </label>
 											<input
-												type="text"
 												class="form-control formulario-datos-input"
-												id="DNI"
-												placeholder="DNI"
+												data-date-format="dd/mm/yyyy"
+												id="datepicker"
 											/>
 										</div>
-
-										<div class="form-group col-md-2">
-											<input
-												type="text"
-												class="form-control formulario-datos-input text-center"
-												id="Verificacion"
-												placeholder="1"
-											/>
-										</div>
-									</div>
-
-									<div class="form-group col-8 pl-0">
-										<label class="label-text"> Fecha de Nacimiento </label>
-										<input
-											class="form-control formulario-datos-input"
-											data-date-format="dd/mm/yyyy"
-											id="datepicker"
-										/>
 									</div>
 
 									<div class="boton-contenedor justify-content-end mt-4">
 										<button
 											type="submit"
-											class="btn btn-primary formulario-datos-boton"
+											class="btn formulario-datos-boton mb-2"
 										>
-											<span class="material-symbols-outlined">
-												arrow_back_ios
-											</span>
-										</button>
-										<button
-											type="submit"
-											class="btn btn-primary formulario-datos-boton"
-										>
-											Denunciar
-										</button>
-										<button
-											type="submit"
-											class="btn btn-primary formulario-datos-boton"
-										>
+											Siguiente
 											<span class="material-symbols-outlined align-middle">
 												arrow_forward_ios
 											</span>
 										</button>
+
+										<a type="submit" class="btn formulario-datos-boton mb-2">
+											Cancelar
+										</a>
+										<a type="submit" class="btn formulario-datos-boton mb-2">
+											Denunciar
+										</a>
 									</div>
 								</form>
-
+								<div>
+									<h6 class="mt-3 mb-3 label-question">
+										¿No sabes cual es tu codigo de verificacion?
+									</h6>
+								</div>
 								<div id="accordion" class="mt-4">
-									<div class="card text-center">
-										<div class="card-header" id="headingOne">
+									<div class="card text-center card-DNI">
+										<div class="card-header header-drop" id="headingOne">
 											<h5 class="mb-0">
 												<button
-													class="btn btn-link"
+													class="btn btn-link header-drop-buttom"
 													data-toggle="collapse"
 													data-target="#collapseOne"
 													aria-expanded="true"
@@ -140,11 +140,11 @@
 											/>
 										</div>
 									</div>
-									<div class="card text-center">
-										<div class="card-header" id="headingTwo">
+									<div class="card text-center card-DNI-Digital">
+										<div class="card-header header-drop" id="headingTwo">
 											<h5 class="mb-0">
 												<button
-													class="btn btn-link collapsed"
+													class="btn btn-link collapsed header-drop-buttom-2"
 													data-toggle="collapse"
 													data-target="#collapseTwo"
 													aria-expanded="false"
