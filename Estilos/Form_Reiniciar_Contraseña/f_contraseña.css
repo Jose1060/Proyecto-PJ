@@ -44,7 +44,55 @@
 }
 
 .formulario-datos-input {
-	border-radius: 70px;
+	margin-top: 25px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 3px solid #fff;
+	color: aliceblue;
+}
+
+.formulario-datos-input::placeholder {
+	color: aliceblue;
+}
+
+.formulario-datos-input:focus::placeholder {
+	color: rgb(0, 0, 0);
+	transition: all 0.6s;
+}
+
+.formulario-datos-input:hover::placeholder {
+	color: rgb(0, 0, 0);
+	transition: all 0.6s;
+}
+
+.formulario-datos-input:hover {
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+	border-left: 3px solid #fff;
+
+	transition: all 0.5s;
+	color: black;
+}
+
+.formulario-datos-input:focus {
+	outline: none;
+
+	border-left: 8.5px solid rgb(0, 0, 0);
+
+	background: rgba(255, 255, 255, 0.5);
+
+	transition: all 0.5s;
+}
+
+.formulario-datos-input-container-icon {
+	margin-top: 25px;
+	border: none;
+}
+
+.formulario-datos-input-icon {
+	background: rgba(0, 0, 0, 0.3);
+	border: none;
+	color: rgb(255, 255, 255);
 }
 
 .formulario-datos-boton {
@@ -71,8 +119,8 @@
 	background: rgba(255, 255, 255, 0.03);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	backdrop-filter: blur(11px);
-	-webkit-backdrop-filter: blur(11px);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 
 	border-radius: 70px;
 }
@@ -88,11 +136,16 @@
 }
 
 .label-text {
-	background-color: #fddbdb;
 	border-radius: 70px;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+	font-size: 18px;
+	color: #fff;
+
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	background: rgba(0, 0, 0, 0);
 }
 
 .label-container {

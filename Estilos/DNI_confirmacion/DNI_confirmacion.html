@@ -15,18 +15,20 @@
 			rel="stylesheet"
 			href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 		/>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="DNI_confirmacion.css" />
 	</head>
+
 	<body>
 		<div class="contenedor container-fluid min-vh-100">
 			<div class="contenedor-all col-lg-7">
 				<div class="contenedor-principal row p-0">
 					<div class="contenedor-izq col-md-5">
-						<div
-							class="contenedor-pj-logo col justify-content-center align-content-center mb-4"
-						>
+						<div class="contenedor-pj-logo col">
 							<div class="text-center">
 								<img src="./src/logo.png" alt="logo" class="" />
 							</div>
@@ -47,13 +49,13 @@
 					</div>
 					<div class="contenedor-der col-md-7">
 						<div class="contenedor-pj-form col row p-0">
-							<div class="formulario-datos col mb-4 ">
+							<div class="formulario-datos col mb-4">
 								<h5 class="mb-4 text-lg-center">Paso 1</h5>
 								<form action="">
-                                    <div class="label-container">
-                                        <label class="label-text">DNI</label>
-                                        <label class="label-text">Codigo de verificacion</label>
-                                    </div>
+									<div class="label-container">
+										<label class="label-text">DNI</label>
+										<label class="label-text">Codigo de verificacion</label>
+									</div>
 									<div class="form-row">
 										<div class="form-group col-md-10">
 											<input
@@ -65,7 +67,6 @@
 										</div>
 
 										<div class="form-group col-md-2">
-                                            
 											<input
 												type="text"
 												class="form-control formulario-datos-input text-center"
@@ -74,21 +75,31 @@
 											/>
 										</div>
 									</div>
-                                    
-                                    
-                                    <div class="form-group col-8 pl-0 ">
-                                        <label class="label-text">
-                                            Fecha de Nacimiento
-                                        </label>
-                                        <input
-                                        class="form-control formulario-datos-input"
-                                        data-date-format="dd/mm/yyyy"
-                                        id="datepicker"/>
+
+									<div class="form-group col-8 pl-0">
+										<label class="label-text"> Fecha de Nacimiento </label>
+										<input
+											class="form-control formulario-datos-input"
+											data-date-format="dd/mm/yyyy"
+											id="datepicker"
+										/>
 									</div>
 
-                                    
-
 									<div class="boton-contenedor justify-content-end">
+										<button
+											type="submit"
+											class="btn btn-primary formulario-datos-boton"
+										>
+											<span class="material-symbols-outlined">
+												arrow_back_ios
+											</span>
+										</button>
+										<button
+											type="submit"
+											class="btn btn-primary formulario-datos-boton"
+										>
+											Denunciar
+										</button>
 										<button
 											type="submit"
 											class="btn btn-primary formulario-datos-boton"
@@ -99,6 +110,66 @@
 										</button>
 									</div>
 								</form>
+
+								<div id="accordion">
+									<div class="card text-center">
+										<div class="card-header" id="headingOne">
+											<h5 class="mb-0">
+												<button
+													class="btn btn-link"
+													data-toggle="collapse"
+													data-target="#collapseOne"
+													aria-expanded="true"
+													aria-controls="collapseOne"
+												>
+													DNI
+												</button>
+											</h5>
+										</div>
+
+										<div
+											id="collapseOne"
+											class="collapse show"
+											aria-labelledby="headingOne"
+											data-parent="#accordion"
+										>
+											<img
+												src="./src/DNIDIgital.svg"
+												alt="DNI Normal"
+												class="card-img-bottom"
+											/>
+										</div>
+									</div>
+									<div class="card text-center">
+										<div class="card-header" id="headingTwo">
+											<h5 class="mb-0">
+												<button
+													class="btn btn-link collapsed"
+													data-toggle="collapse"
+													data-target="#collapseTwo"
+													aria-expanded="false"
+													aria-controls="collapseTwo"
+												>
+													DNI Digital
+												</button>
+											</h5>
+										</div>
+										<div
+											id="collapseTwo"
+											class="collapse"
+											aria-labelledby="headingTwo"
+											data-parent="#accordion"
+										>
+											<div class="card-body">
+												<img
+													src="./src/DNINormal.svg"
+													alt="DNI Digital"
+													class="card-img-bottom"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -112,18 +183,21 @@
 				$("#datetimepicker1").datetimepicker();
 			});
 		</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $('#datepicker').datepicker({
-                weekStart: 1,
-                daysOfWeekHighlighted: "6,0",
-                autoclose: true,
-                todayHighlight: true,
-            });
-            $('#datepicker').datepicker("setDate", new Date());
-        </script>
-    
-    </body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript">
+			$("#datepicker").datepicker({
+				weekStart: 1,
+				daysOfWeekHighlighted: "6,0",
+				autoclose: true,
+				todayHighlight: true,
+			});
+			$("#datepicker").datepicker("setDate", new Date());
+		</script>
+	</body>
 </html>
