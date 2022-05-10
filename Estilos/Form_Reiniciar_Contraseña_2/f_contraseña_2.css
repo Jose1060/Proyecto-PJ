@@ -8,13 +8,13 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	background-image: url("src/background-3.jpg");
+	background-image: url("src/background-5.jpg");
 	z-index: 0;
-	justify-content: center;
 	background-size: cover;
 	background-position: center;
 	min-height: 100vh;
 	height: auto;
+	justify-content: center;
 }
 
 .contenedor-izq {
@@ -73,20 +73,23 @@
 	outline: none;
 	background: rgba(0, 0, 0, 0);
 	border-left: 3px solid #fff;
-	outline: none;
 
 	transition: all 0.5s;
 	color: black;
 }
 
 .formulario-datos-input:focus {
+	outline: none;
+
 	border-left: 8.5px solid rgb(0, 0, 0);
+
 	background: rgba(255, 255, 255, 0.5);
+
 	transition: all 0.5s;
 }
 
 .formulario-datos-input-container-icon {
-	margin-top: 25px;
+	margin-top: 10px;
 	border: none;
 }
 
@@ -122,12 +125,13 @@
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(20px);
 
 	border-radius: 70px;
 }
 
 .boton-contenedor {
+	margin-top: 25%;
 	border-top: 1px solid #fff;
 	padding-top: 20px;
 	display: flex;
@@ -140,7 +144,19 @@
 	height: 1.5em;
 }
 
-.label-text {
+.label-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
+	margin-bottom: 3%;
+}
+
+.form-label {
 	border-radius: 70px;
 	padding: 5px;
 	padding-left: 10px;
@@ -153,95 +169,16 @@
 	background: rgba(0, 0, 0, 0);
 }
 
-.label-container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.header-drop {
-	border-top-left-radius: 70px;
-	border-top-right-radius: 70px;
-	color: #fff;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-}
-
-.card-DNI {
-	background: rgba(255, 255, 255, 0.03);
-	border: 2px solid #fff;
-
-	border-top-left-radius: 70px;
-	border-top-right-radius: 70px;
-}
-
-.card-DNI-Digital {
-	background: rgba(255, 255, 255, 0.03);
-	border: 2px solid #fff;
-
-	border-bottom-left-radius: 70px;
-	border-bottom-right-radius: 70px;
-}
-
-.card-DNI:hover {
-	background: rgba(8, 8, 8, 0.5);
-	transition: all 0.5s;
+.formulario-datos-input-disabled {
+	margin-top: 10px;
 	color: #fff;
 }
 
-.card-DNI-Digital:hover {
-	background: rgba(8, 8, 8, 0.5);
-	transition: all 0.5s;
-	color: #fff;
+.formulario-datos-input-disabled:disabled {
+	background-color: rgb(255, 255, 255);
+	color: black;
 }
 
-.header-drop-buttom {
-	border-top-left-radius: 70px;
-	border-top-right-radius: 70px;
-	color: #fff;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding-top: 18px;
-	padding-bottom: 18px;
-}
-
-.header-drop-buttom-2 {
-	border-bottom-left-radius: 70px;
-	border-bottom-right-radius: 70px;
-	color: #fff;
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding-top: 18px;
-	padding-bottom: 18px;
-}
-
-.header-drop-buttom:hover {
-	color: white;
-	font-style: oblique;
-	font-weight: bold;
-}
-
-.header-drop-buttom-2:hover {
-	color: white;
-	font-style: oblique;
-	font-weight: bold;
-}
-
-.label-question {
-	border-top: 1px solid #fff;
-	padding-top: 10px;
-}
-
-.formulario-contenedor-inputs {
-	padding-bottom: 10%;
-}
-
-.formulario-datos-title {
-	border-bottom: 1px solid #fff;
-	padding: 4%;
-	margin-bottom: 3%;
+.formulario-datos-input-disabled::placeholder {
+	color: black;
 }

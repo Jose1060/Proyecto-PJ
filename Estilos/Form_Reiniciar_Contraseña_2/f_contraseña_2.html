@@ -19,7 +19,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="Denuncia.css" />
+		<link rel="stylesheet" href="f_contraseña_2.css" />
 	</head>
 	<body>
 		<div class="contenedor container-fluid min-vh-100">
@@ -50,7 +50,7 @@
 								<h2
 									class="mb-5 text-lg-center text-white formulario-datos-title"
 								>
-									Paso 1
+									Paso 2
 								</h2>
 								<form action="">
 									<div class="form-group col-lg-9 pl-0 mb-3">
@@ -58,10 +58,11 @@
 										<div class="input-group mb-3">
 											<input
 												type="text"
-												class="form-control formulario-datos-input"
+												class="form-control formulario-datos-input-disabled"
 												id="DNI"
 												placeholder="DNI"
 												maxlength="8"
+												disabled
 											/>
 											<div
 												class="input-group-append formulario-datos-input-container-icon"
@@ -76,13 +77,13 @@
 									</div>
 
 									<div class="form-group col-lg-97 pl-0 mb-3">
-										<label class="form-label">Nombre</label>
+										<label class="form-label">Contraseña</label>
 										<div class="input-group mb-3">
 											<input
-												type="text"
+												type="password"
 												class="form-control formulario-datos-input"
-												id="Nombre"
-												placeholder="Nombre"
+												id="contraseña"
+												placeholder="Contraseña"
 												maxlength="8"
 											/>
 											<div
@@ -91,21 +92,21 @@
 												<span
 													class="material-symbols-outlined input-group-text formulario-datos-input-icon"
 												>
-													account_circle
+													vpn_key
 												</span>
 											</div>
 										</div>
 									</div>
 
-									<div class="form-group col-lg-7 pl-0 mb-3">
-										<label class="form-label">Telefono</label>
+									<div class="form-group col-lg-97 pl-0 mb-3">
+										<label class="form-label">Repetir Contraseña</label>
 										<div class="input-group mb-3">
 											<input
-												type="text"
+												type="password"
 												class="form-control formulario-datos-input"
-												id="Telefono"
-												placeholder="Telefono"
-												maxlength="9"
+												id="contraseña-confirm"
+												placeholder="Repetir Contraseña"
+												maxlength="8"
 											/>
 											<div
 												class="input-group-append formulario-datos-input-container-icon"
@@ -113,20 +114,10 @@
 												<span
 													class="material-symbols-outlined input-group-text formulario-datos-input-icon"
 												>
-													call
+													vpn_key
 												</span>
 											</div>
 										</div>
-									</div>
-									<div class="form-group col-lg-13 pl-0 mb-3">
-										<label for="textDescription" class="form-label"
-											>Descripcion</label
-										>
-										<textarea
-											class="form-control formulario-datos-input text-input scrollbar-ripe-malinka"
-											id="textDescription"
-											rows="2"
-										></textarea>
 									</div>
 
 									<div class="boton-contenedor justify-content-end">

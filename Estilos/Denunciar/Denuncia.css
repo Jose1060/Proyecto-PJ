@@ -8,7 +8,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	background-image: url("src/background.jpg");
+	background-image: url("src/background-2.jpg");
 	z-index: 0;
 	background-size: cover;
 	background-position: center;
@@ -122,7 +122,7 @@
 
 .contenedor-principal {
 	/* From https://css.glass */
-	background: rgba(255, 255, 255, 0.03);
+	background: rgba(136, 136, 136, 0.4);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(20px);

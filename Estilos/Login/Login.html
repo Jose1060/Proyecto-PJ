@@ -29,10 +29,13 @@
 							SISTEMA ÚNICO DE GESTIÓN ADMINISTRATIVA
 						</h2>
 					</div>
-					<div class="formulario-datos col p-5 mb-4 text-lg-center">
-						<h5 class="mb-4">Ingrese sus datos de acceso</h5>
+
+					<div class="formulario-datos col text-lg-center">
+						<h4 class="formulario-datos-title text-white text-center">
+							Ingrese sus datos de acceso
+						</h4>
 						<form action="">
-							<div class="form-group">
+							<div class="form-group col-md-auto mb-5">
 								<input
 									type="text"
 									class="form-control formulario-datos-input"
@@ -40,7 +43,7 @@
 									placeholder="Usuario"
 								/>
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-auto mb-5">
 								<input
 									type="password"
 									class="form-control formulario-datos-input"
@@ -48,12 +51,16 @@
 									placeholder="Contraseña"
 								/>
 							</div>
-							<button
-								type="submit"
-								class="btn btn-primary formulario-datos-boton"
-							>
-								Ingresar
-							</button>
+
+							<div class="boton-contenedor justify-content-end mt-4">
+								<button type="submit" class="btn formulario-datos-boton mb-2">
+									Ingresar
+								</button>
+								<div class="formulario-opciones-contenedor">
+									<a href="#">Olvidaste tu contraseña?</a>
+									<a href="#">Crear Nuevo Usuario</a>
+								</div>
+							</div>
 						</form>
 					</div>
 					<div class="formulario-enlaces">
