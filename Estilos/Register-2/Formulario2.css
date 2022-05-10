@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-image: url("src/background-2.jpg");
+	z-index: 0;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
+}
+
+.contenedor-izq {
+	background-color: #941414;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+
+	color: #fff;
+}
+.contenedor-der {
+	padding: 7%;
+}
+
+.vectores-fondo {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	min-height: 100vh;
+	height: auto;
+	z-index: -1;
+}
+
+.formulario-datos {
+	border-radius: 70px;
+}
+
+.formulario-datos-input {
+	margin-top: 10px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 3px solid #fff;
+	color: aliceblue;
+}
+
+.formulario-datos-input::placeholder {
+	color: aliceblue;
+}
+
+.formulario-datos-input:focus::placeholder {
+	color: rgb(0, 0, 0);
+	transition: all 0.6s;
+}
+
+.formulario-datos-input:hover::placeholder {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	transition: all 0.6s;
+}
+
+.formulario-datos-input-disabled {
+	color: #fff;
+}
+
+.formulario-datos-input-disabled:disabled {
+	background-color: rgb(255, 255, 255);
+	color: black;
+}
+
+.formulario-datos-input-disabled::placeholder {
+	color: black;
+}
+
+.formulario-datos-input:hover {
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+	border-left: 3px solid #fff;
+	outline: none;
+
+	transition: all 0.5s;
+	color: black;
+}
+
+.formulario-datos-input:focus {
+	border-left: 8.5px solid rgb(0, 0, 0);
+	background: rgba(255, 255, 255, 0.7);
+	transition: all 0.5s;
+}
+
+.formulario-datos-input-container-icon {
+	margin-top: 25px;
+	border: none;
+	padding-bottom: 5%;
+}
+
+.formulario-datos-input-icon {
+	background: rgba(0, 0, 0, 0.3);
+	border: none;
+	color: rgb(255, 255, 255);
+}
+
+.formulario-datos-boton {
+	background: #f35151;
+	border-radius: 70px;
+	font-size: 18px;
+	width: auto;
+	color: white;
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	transition: all 1s;
+	border: none;
+}
+.formulario-datos-boton:hover {
+	background: #941414;
+}
+
+.contenedor-principal {
+	/* From https://css.glass */
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(11px);
+
+	border-radius: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.boton-contenedor {
+	margin-top: 15px;
+	display: flex;
+	border-top: 1px solid #fff;
+}
+
+.form-label {
+	border-radius: 70px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 18px;
+	color: #fff;
+
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	background: rgba(0, 0, 0, 0);
+}
+
+.group-inputs {
+	border-bottom: 3px groove rgb(255, 255, 255, 0.3);
+	border-left: 3px groove rgb(255, 255, 255, 0.3);
+	padding: 12px;
+	margin-bottom: 35px;
+	border-radius: 50px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
+}

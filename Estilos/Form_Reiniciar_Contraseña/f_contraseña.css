@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-image: url("src/background.jpg");
+	z-index: 0;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
+	justify-content: center;
+}
+
+.contenedor-izq {
+	background-color: #941414;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-shadow: 13px 0px 20px rgba(0, 0, 0, 0.3);
+
+	color: #fff;
+}
+.contenedor-der {
+	padding: 5%;
+}
+
+.vectores-fondo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: -1;
+}
+
+.formulario-datos {
+	border-radius: 70px;
+}
+
+.formulario-datos-input {
+	margin-top: 10px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 3px solid #fff;
+	color: aliceblue;
+}
+
+.formulario-datos-input::placeholder {
+	color: aliceblue;
+}
+
+.formulario-datos-input:focus::placeholder {
+	color: rgb(0, 0, 0);
+	transition: all 0.6s;
+}
+
+.formulario-datos-input:hover::placeholder {
+	color: rgb(0, 0, 0);
+	transition: all 0.6s;
+}
+
+.formulario-datos-input:hover {
+	outline: none;
+	background: rgba(0, 0, 0, 0);
+	border-left: 3px solid #fff;
+
+	transition: all 0.5s;
+	color: black;
+}
+
+.formulario-datos-input:focus {
+	outline: none;
+
+	border-left: 8.5px solid rgb(0, 0, 0);
+
+	background: rgba(255, 255, 255, 0.5);
+
+	transition: all 0.5s;
+}
+
+.formulario-datos-input-container-icon {
+	margin-top: 10px;
+	border: none;
+}
+
+.formulario-datos-input-icon {
+	background: rgba(0, 0, 0, 0.3);
+	border: none;
+	color: rgb(255, 255, 255);
+}
+
+.formulario-datos-boton {
+	background: #f35151;
+	border-radius: 70px;
+	font-size: 18px;
+	width: auto;
+	color: white;
+
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	transition: all 1s;
+	border: none;
+}
+.formulario-datos-boton:hover {
+	background: #941414;
+	color: #fff;
+}
+
+.contenedor-principal {
+	/* From https://css.glass */
+	background: rgba(255, 255, 255, 0.03);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+
+	border-radius: 70px;
+}
+
+.boton-contenedor {
+	margin-top: 25%;
+	border-top: 1px solid #fff;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.datepicker td,
+.datepicker th {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.label-text {
+	border-radius: 70px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 18px;
+	color: #fff;
+
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	background: rgba(0, 0, 0, 0);
+}
+
+.label-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
+	margin-bottom: 3%;
+}
