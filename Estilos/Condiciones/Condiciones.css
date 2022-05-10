@@ -11,6 +11,10 @@
 	background-image: url("https://www.peru.travel/Contenido/Destino/Imagen/es/3/1.2/Principal/Plaza%20de%20Armas%20Arequipa.jpg");
 	z-index: 0;
 	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
 }
 
 .contenedor-izq {
@@ -120,4 +124,9 @@ li {
 	padding-left: 50px;
 	padding-right: 50px;
 	border-radius: 10px;
+}
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
 }

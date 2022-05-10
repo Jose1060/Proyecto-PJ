@@ -239,3 +239,9 @@
 .formulario-contenedor-inputs {
 	padding-bottom: 10%;
 }
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
+	margin-bottom: 3%;
+}

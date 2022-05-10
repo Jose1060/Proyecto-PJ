@@ -8,8 +8,12 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	background-image: url("https://www.peru.travel/Contenido/Destino/Imagen/es/3/1.2/Principal/Plaza%20de%20Armas%20Arequipa.jpg");
+	background-image: url("src/background.jpg");
 	z-index: 0;
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	height: auto;
 	justify-content: center;
 }
 
@@ -44,7 +48,7 @@
 }
 
 .formulario-datos-input {
-	margin-top: 25px;
+	margin-top: 10px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	border-bottom: 3px solid #fff;
@@ -85,7 +89,7 @@
 }
 
 .formulario-datos-input-container-icon {
-	margin-top: 25px;
+	margin-top: 10px;
 	border: none;
 }
 
@@ -104,14 +108,15 @@
 
 	padding-bottom: 10px;
 	padding-top: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 15px;
+	padding-right: 15px;
 
 	transition: all 1s;
 	border: none;
 }
 .formulario-datos-boton:hover {
 	background: #941414;
+	color: #fff;
 }
 
 .contenedor-principal {
@@ -126,7 +131,11 @@
 }
 
 .boton-contenedor {
+	margin-top: 25%;
+	border-top: 1px solid #fff;
+	padding-top: 20px;
 	display: flex;
+	flex-direction: column;
 }
 
 .datepicker td,
@@ -152,4 +161,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.formulario-datos-title {
+	border-bottom: 1px solid #fff;
+	padding: 4%;
+	margin-bottom: 3%;
 }
